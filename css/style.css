@@ -1,0 +1,235 @@
+:root {
+    --fuenteHeading: "PT Sans", sans-serif;
+    --funeteParrafos: "Open Sans", sans-serif;
+    --primario: #784d3c;
+    --gris: #e1e1e1;
+    --blanco: #fff;
+    --negro: #000;
+    --newcolor: #a3061b;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /** 1rem = 10px **/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--funeteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+body{
+    color: var(--newcolor);
+    background-color: #e1e1e1;
+}
+
+
+/** -------GLOBALES-------------**/
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+    /** patra centrar el contenido **/
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+img {
+    max-width: 100%;
+    border-radius: .8rem;
+}
+
+
+/** ------------UTILIDADES--------------**/
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+
+
+/** Creacion de Bonton **/
+
+.boton {
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    /** CAMBIAR A MAYUSCULAS **/
+    font-weight: 700;
+    /** Negritas**/
+    margin-bottom: 2rem;
+    /** Algo de separacion hacia abajo **/
+    border-radius: 2rem;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        /** toma el espacio que requiere y respeta el margin y el width **/
+    }
+}
+
+@media (min-width: 992px) {
+    .boton {
+        display: inline-block;
+        /** toma el espacio que requiere y respeta el margin y el width **/
+    }
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.boton--primario {
+    background-color: var(--negro);
+}
+
+.boton--secundario {
+    background-color: var(--primario);
+}
+
+.cursos {
+    list-style: none;
+}
+
+.widget-curso {
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.widget-curso:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+
+.widget-curso__label {
+    font-family: var(--fuenteHeading);
+    font-weight: 700;
+}
+
+.widget-curso__info {
+    font-weight: normal;
+}
+
+.widget-curso__info,
+.widget-curso__label {
+    font-size: 2rem;
+}
+
+.footer {
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+
+
+/**-------------Contacto----------------**/
+.error{
+    background-color: rgb(185, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+.exito{
+    background-color: rgb(0, 236, 12);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+.contacto-bg {
+    background-image: url(../img/carro.jpg);
+    background-position: 52% 48%;
+    height: 40rem;
+    border-radius: .8rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/**-------------FORMULARIO----------------**/
+
+.formulario {
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+.cam {
+    text-align: center;
+}
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo__label {
+    flex: 0 0 9rem;
+    text-align: left;
+    
+    
+}
+
+.campo__field {
+    flex: 1rem;
+    border: 1px solid var(--gris);
+    
+}
+
+.campo__field--textarea {
+    min-height: 20rem;
+}
+
+.food {
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: var(--blanco);
+}
